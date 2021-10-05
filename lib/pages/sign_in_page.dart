@@ -172,11 +172,16 @@ class SignInPage extends StatelessWidget {
                 fontSize: 12,
               ),
             ),
-            Text(
-              'Sign Up',
-              style: purpleTextStyle.copyWith(
-                fontSize: 12,
-                fontWeight: medium,
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/sign-up');
+              },
+              child: Text(
+                'Sign Up',
+                style: purpleTextStyle.copyWith(
+                  fontSize: 12,
+                  fontWeight: medium,
+                ),
               ),
             ),
           ],
