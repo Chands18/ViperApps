@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viper/theme.dart';
+import 'package:viper/widgets/chat_bubble.dart';
 
 class DetailChatPage extends StatelessWidget {
   @override
@@ -152,7 +153,16 @@ class DetailChatPage extends StatelessWidget {
         padding: EdgeInsets.symmetric(
           horizontal: defaultMargin,
         ),
-        children: [],
+        children: [
+          ChatBubble(
+            isSender: true,
+            text: 'Hi,This item is still available?',
+          ),
+          ChatBubble(
+            isSender: false,
+            text: 'Good night, this item only available for size 44',
+          ),
+        ],
       );
     }
 
