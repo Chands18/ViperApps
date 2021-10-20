@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viper/theme.dart';
+import 'package:viper/widgets/wishlist_card.dart';
 
 class WishlistPage extends StatelessWidget {
   @override
@@ -78,10 +79,29 @@ class WishlistPage extends StatelessWidget {
       );
     }
 
+    Widget content() {
+      return Expanded(
+        child: Container(
+          color: backgroundColor3,
+          child: ListView(
+            padding: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+            ),
+            children: [
+              WishlistCard(),
+              WishlistCard(),
+              WishlistCard(),
+            ],
+          ),
+        ),
+      );
+    }
+
     return Column(
       children: [
         header(),
-        emptyWishList(),
+        // emptyWishList(),
+        content(),
       ],
     );
   }
