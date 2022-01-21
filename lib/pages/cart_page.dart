@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viper/theme.dart';
+import 'package:viper/widgets/cart_card.dart';
 
 class CartPage extends StatelessWidget {
   @override
@@ -71,10 +72,23 @@ class CartPage extends StatelessWidget {
       );
     }
 
+    Widget content() {
+      return ListView(
+        padding: EdgeInsets.symmetric(
+          horizontal: defaultMargin,
+        ),
+        children: [
+          CartCard(),
+        ],
+      );
+    }
+
+    ;
+
     return Scaffold(
       backgroundColor: backgroundColor3,
       appBar: header(),
-      body: emptyCart(),
+      body: content(),
     );
   }
 }
