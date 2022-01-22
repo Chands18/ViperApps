@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viper/pages/cart_page.dart';
+import 'package:viper/pages/checkout_page.dart';
 import 'package:viper/pages/detail_chat_page.dart';
 import 'package:viper/pages/edit_profile_page.dart';
 import 'package:viper/pages/home/main_page.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/edit-profile': (context) => EditProfilePage(),
         '/product': (context) => ProductPage(),
         '/cart': (context) => CartPage(),
+        '/checkout': (context) => CheckoutPage(),
       },
     );
   }
