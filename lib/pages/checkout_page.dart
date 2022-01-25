@@ -11,7 +11,7 @@ class CheckoutPage extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         title: Text(
-          'Checout Details',
+          'Checkout Details',
         ),
       );
     }
@@ -112,7 +112,7 @@ class CheckoutPage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Jatinegara',
+                          'London',
                           style: primaryTextStyle.copyWith(
                             fontWeight: medium,
                           ),
